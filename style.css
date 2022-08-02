@@ -1,19 +1,33 @@
+.color {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
 #preta {
-    background-color: black;
-    border: solid black 1px;
+  background-color: black;
+  border: solid black 1px;
 }
 
 #amarelo {
-    background-color: yellow;
-    border: solid black 1px
+  background-color: yellow;
+  border: solid black 1px;
 }
 
 #azul {
-    background-color: blue;
-    border: solid black 1px
+  background-color: blue;
+  border: solid black 1px;
 }
 
 #vermelho {
-    background-color: red;
-    border: solid black 1px
+  background-color: red;
+  border: solid black 1px;
+}
+
+.pixel {
+  border: solid black 1px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: white;
 }

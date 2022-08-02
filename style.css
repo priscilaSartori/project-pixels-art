@@ -24,10 +24,20 @@
   border: solid black 1px;
 }
 
+#pixel-board {
+    border: 1px solid black;
+    width: 210px;
+    height: 210px;
+}
+
 .pixel {
   border: solid black 1px;
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  position:relative;
+  height: 40px;
+  width: 40px;
   background-color: white;
+  margin: 0;
+  padding: 0;
+  float: left;
 }

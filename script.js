@@ -1,11 +1,18 @@
-window.onload = function() {
-    // function quadro(){
-    // let quadro = document.querySelector("#pixel-board");
-    // for(let index = 0; index <= 24; index += 1) {
-    //     let pixels = document.createElement("div");
-    //     pixels.className = "pixel";
-    //     quadro.appendChild(pixels);
-    //     }
-    // } quadro();
 
-}
+let preto = document.getElementById("preto");
+let amarelo = document.getElementById("amarelo");
+let azul = document.getElementById("azul");
+let vermelho = document.getElementById("vermelho");
+
+function selectionColor(event){
+    document.getElementById("preto").className = "color";
+    document.getElementById("amarelo").className = "color";
+    document.getElementById("azul").className = "color";
+    document.getElementById("vermelho").className = "color";
+    event.target.classList = "color selected";
+} 
+    preto.addEventListener("click", selectionColor);
+    amarelo.addEventListener("click", selectionColor);
+    azul.addEventListener("click", selectionColor);
+    vermelho.addEventListener("click", selectionColor);
+    

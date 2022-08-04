@@ -2,7 +2,9 @@ let preto = document.getElementById("preto");
 let amarelo = document.getElementById("amarelo");
 let azul = document.getElementById("azul");
 let vermelho = document.getElementById("vermelho");
+let pixel = document.getElementsByClassName('pixel')
 let colorSelect = "black";
+let clear = "white"
 
 preto.addEventListener("click", function(event){
     amarelo.className = "color";
@@ -39,4 +41,3 @@ vermelho.addEventListener("click", function(event){
 function pixelboard(pixel){
     pixel.style.backgroundColor = colorSelect;
 }
-console.log(colorSelect)

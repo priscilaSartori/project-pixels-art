@@ -11,40 +11,41 @@
     <h1 id="title">Paleta de Cores</h1>
     <section id="color-palette">
         <div class="color selected" id="preto"></div>
-        <div class="color" id="amarelo"></div>
-        <div class="color" id="azul"></div>
-        <div class="color" id="vermelho"></div>
+        <div class="color" id="cor1"></div>
+        <div class="color" id="cor2"></div>
+        <div class="color" id="cor3"></div>
     </section>
     <section>
-        <button id="clear-board" onclick="window.location.reload()">Limpar</button>
+        <button id="clear-board" onclick="window.location.reload()">Limpar</button>     
+    <label for="board-size"></label>
+        <input type="number" name="tamanho" value="5" id="board-size" min="1" required> <button type="submit" form="formulario" id="generate-board">VQV</button>    
     </section>
-    <section>
-        <div id="pixel-board">
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
-            <div class="pixel" onclick="pixelboard(this)"></div>
+    <section id="pixel-board">
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
+            <div class="pixel"></div>
         </section>
     <script type="text/javascript" src="script.js"></script>
 </body>

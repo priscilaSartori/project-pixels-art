@@ -27,9 +27,9 @@ button.addEventListener('click', function(event) {
         currentChildren.remove();
         }
     let n = size1.value;
-     
+
     if (n == "") {
-       alert('Board inválido!');
+        alert("Board inválido!")
     } else if (n < 5) {
         value = 5;
     } else if (n > 50) {

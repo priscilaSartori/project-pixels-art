@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -9,17 +9,17 @@ body {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   height: 100%;
-  flex-direction:column;
+  flex-direction: column;
 }
 
-#color-palette{
+#color-palette {
   width: 800px;
   padding: 10px;
   display: flex;
   justify-content: center;
-  align-items:baseline;
+  align-items: baseline;
   border-radius: 3px;
 }
 
@@ -49,12 +49,13 @@ body {
 }
 
 #pixel-board {
+
   --value: 5;
   padding: 10px;
   border-radius: 3px;
   display: grid;
-  grid-template-columns:repeat(var(--value), 1fr);
-  grid-template-rows:repeat(var(--value),1fr);
+  grid-template-columns: repeat(var(--value), 1fr);
+  grid-template-rows: repeat(var(--value), 1fr);
 }
 
 .pixel {

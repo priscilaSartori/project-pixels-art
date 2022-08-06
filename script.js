@@ -2,9 +2,6 @@ let preto = document.getElementById("preto");
 let cor1 = document.getElementById("cor1");
 let cor2 = document.getElementById("cor2");
 let cor3 = document.getElementById("cor3");
-let color1 = cor1.style.backgroundColor;
-let color2 = cor2.style.backgroundColor;
-let color3 = cor3.style.backgroundColor;
 let color = document.getElementsByClassName("color");
 let rgb;
 let pixelboard1 = document.getElementById("pixel-board");
@@ -53,13 +50,10 @@ function geradorDeCor(){
 }
 
 window.onload = function() {
-    cor1.style.backgroundColor = geradorDeCor();
-    cor2.style.backgroundColor = geradorDeCor();
-    cor3.style.backgroundColor = geradorDeCor();
+    color1 = cor1.style.backgroundColor = geradorDeCor();
+    color2 = cor2.style.backgroundColor = geradorDeCor();
+    color3 = cor3.style.backgroundColor = geradorDeCor();
 }
-console.log(cor1.style.backgroundColor)
-console.log(cor2.style.backgroundColor)
-console.log(cor3.style.backgroundColor)
 
 preto.addEventListener("click", function(event){
     cor1.className = "color";

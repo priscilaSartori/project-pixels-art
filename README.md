@@ -297,6 +297,8 @@ Habilidades desenvolvidas
 - Acesse a pasta do projeto no terminal/cmd: `cd project-pixels-art`
 
 - Instale as dependências: `npm install`
+  
+- Para acessar a aplicação, utilize o "Go Live" e o localhost (atribuído a um número de porta) deverá iniciar em seu navegador padrão.
 
 - Execute os testes:
 

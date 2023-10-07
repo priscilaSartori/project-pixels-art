@@ -11,12 +11,21 @@ let button = document.getElementById("generate-board");
 let size1 = document.getElementById("board-size");
 let value;
 
-function tabela(value){
+function tabela(value) {
     pixelboard1.style.setProperty('--value', value);
-    for(let index = 0; index < value * value; index += 1) {
-    let div = document.createElement('div');
-    div.className = "pixel";
-    pixelboard1.appendChild(div)
+
+    while (pixelboard1.firstChild) {
+        pixelboard1.removeChild(pixelboard1.firstChild);
+    }
+
+    for (let index = 0; index < value * value; index += 1) {
+        let div = document.createElement('div');
+        div.className = "pixel";
+        pixelboard1.appendChild(div);
+
+        div.addEventListener('click', function(event) {
+            div.style.backgroundColor = colorSelect;
+        });
     }
 }
 
@@ -49,10 +58,21 @@ function geradorDeCor(){
     return rgb;
 }
 
+function clickPalelle() {
+    const pixels = document.querySelectorAll('.pixel');
+
+    pixels.forEach(pixel => {
+        pixel.addEventListener('click', function(event) {
+            pixel.style.backgroundColor = colorSelect;
+        });
+    });
+}
+
 window.onload = function() {
     color1 = cor1.style.backgroundColor = geradorDeCor();
     color2 = cor2.style.backgroundColor = geradorDeCor();
     color3 = cor3.style.backgroundColor = geradorDeCor();
+    clickPalelle();
 }
 
 preto.addEventListener("click", function(event){
@@ -86,12 +106,3 @@ cor3.addEventListener("click", function(event){
     preto.classList = "color";
     colorSelect = color3;
 });
-
-function clickPalelle() {
-    for(let index = 0; index < pixel.length; index += 1) {
-        pixel[index].addEventListener("click", function(event) {
-            pixel[index].style.background = colorSelect;
-        })
-    }
-}
-clickPalelle()

@@ -30,6 +30,34 @@ Habilidades desenvolvidas
 
 <br />
 
+## Pré-requisitos
+
+- Antes de começar, você vai precisar ter instalado em sua máquina a ferramenta [Git](https://git-scm.com).
+- Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+
+<br />
+
+## Acesso ao Projeto
+
+- Clone este repositório: `git clone git@github.com:priscilaSartori/project-pixels-art.git`
+
+- Acesse a pasta do projeto no terminal/cmd: `cd project-pixels-art`
+
+- Instale as dependências: `npm install`
+  
+- Para acessar a aplicação, utilize o "Go Live" e o localhost (atribuído a um número de porta) deverá iniciar em seu navegador padrão.
+
+- Execute os testes:
+
+  Para executar os testes apenas no terminal: `npm test`
+
+  Para executar os testes e vê-los rodando em uma janela de navegador: `npm run cypress:open` ou `npx cypress open`
+
+  O Cypress é uma ferramenta de teste de front-end desenvolvida para a web. 
+  Após executar um dos comandos acima, uma janela de navegador será aberta e, então, você poderá escolher o teste a ser executado (project.spec.js) ou    escolher Run all specs para executar todos os testes.
+
+<br />
+
 ## Requisitos Obrigatórios
 
 ### 1 - Adicione à página o título "Paleta de Cores".
@@ -280,31 +308,3 @@ Habilidades desenvolvidas
 - As cores geradas na paleta são diferentes a cada carregamento da página.
 
 </details>
-
-<br />
-
-## Pré-requisitos
-
-- Antes de começar, você vai precisar ter instalado em sua máquina a ferramenta [Git](https://git-scm.com).
-- Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
-
-<br />
-
-## Acesso ao Projeto
-
-- Clone este repositório: `git clone git@github.com:priscilaSartori/project-pixels-art.git`
-
-- Acesse a pasta do projeto no terminal/cmd: `cd project-pixels-art`
-
-- Instale as dependências: `npm install`
-  
-- Para acessar a aplicação, utilize o "Go Live" e o localhost (atribuído a um número de porta) deverá iniciar em seu navegador padrão.
-
-- Execute os testes:
-
-  Para executar os testes apenas no terminal: `npm test`
-
-  Para executar os testes e vê-los rodando em uma janela de navegador: `npm run cypress:open` ou `npx cypress open`
-
-  O Cypress é uma ferramenta de teste de front-end desenvolvida para a web. 
-  Após executar um dos comandos acima, uma janela de navegador será aberta e, então, você poderá escolher o teste a ser executado (project.spec.js) ou    escolher Run all specs para executar todos os testes.
